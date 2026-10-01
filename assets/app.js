@@ -66,14 +66,14 @@
     calc.addEventListener('input', upd); upd();
   }
 
-  // форма заявки (демо: данные никуда не отправляются)
+  // форма заявки: данные никуда не отправляются
   var form = document.querySelector('form.order');
   if (form) form.addEventListener('submit', function (e) {
     e.preventDefault();
     var msg = form.querySelector('.form-msg');
     msg.hidden = false;
     if (!form.checkValidity()) { msg.textContent = 'Заполните имя, контакт и подтвердите согласие.'; return; }
-    msg.textContent = 'Спасибо, ' + form.elements['name'].value + '! Это демо-версия сайта: заявка не отправляется на сервер.';
+    msg.textContent = 'Спасибо, ' + form.elements['name'].value + '! Онлайн-отправка заявок сейчас не работает — данные не были отправлены.';
     form.reset();
   });
 })();
