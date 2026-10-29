@@ -4,4 +4,4 @@ Disallow: /private/
 Allow: /private/public/
 Disallow: /search?
 Disallow: *.pdf$
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://sadoveg.github.io/ronin-props/sitemap.xml
